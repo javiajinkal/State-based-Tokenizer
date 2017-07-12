@@ -1,0 +1,72 @@
+/* Demonstrates Requirement 4 of Project1. 
+   Each of the results for sub Requirements of Requirement 4 are displayed and 
+   corresponding sub requirement numbers are provided in the comment above it. 
+   Demonstration of setSpecialSingleChars(string ssc) and setSpecialCharPairs(string scp) 
+   for setting default values of special one and two character tokens is provided.     */
+//---------------------------------------------------------------------
+
+int main()
+{
+	//--------------------------------------------------------------------
+	//Requirement 4(1): alphanumeric tokens
+	//--------------------------------------------------------------------
+	std::cout << "cout is alphanum";
+        bool condition = true;
+        int i,j;
+ 	char ch;
+
+	//---------------------------------------------------------------------
+	/*Requirement 4(2): punctuator tokens are: %?@#~$&_
+	They are displayed at the end of file for testing the requirements 
+        as it is syntactically invalid in C++ */
+	//---------------------------------------------------------------------
+	/*Requirement 4(3): special one and two character tokens:
+        The entire list of each of them is demonstrated at the end of file
+	Special one character tokens: <>[](){}:=+-*\n
+	Special two character tokens: <<>>::++--==+=-=*=/=                */
+
+	//----------------------------------------------------------------------
+	//Arithmetic special two character tokens
+	//----------------------------------------------------------------------
+        if(i==0)
+	{
+		i += 10;
+		j++;
+		i--;
+		i -= j;
+ 		i /= j;
+		j *= i;
+	}	
+	//-------------------------------------------------------------------------
+	/*Requirement 4(4): This is C style comment returned as single token when show_comment is true */
+	//-------------------------------------------------------------------------
+	//Requirement 4(5): This is C++ style comment returned as single token when show_comment is true
+	//-------------------------------------------------------------------------
+	//Requirement 4(6): quoted strings
+	//-------------------------------------------------------------------------
+	std::cout << "This is String with outer quotes discarded";
+	std::cout << "This is \"String with double quotes\"";
+        std::cout << "This is \'a\' string with single quotes";
+	//Empty string-------------------------------------------------------------
+	std::cout << "";
+        //Single quoted characters with outer quotes discarded---------------------
+	ch = '\t';
+	ch = '\'';
+	ch = '\"';
+
+	return 0;
+}
+/*Following statements are Invalid Syntactically in C++
+  Only for demonstration of requirements of Project1 */
+//---------------------------------------------------------------------
+//Requirement 4(2): Punctuators
+//----------------------------------------------------------------------
+%?@#~$&_
+//----------------------------------------------------------------------
+//Requirement 4(3): Special one character tokens:
+//----------------------------------------------------------------------
+<>[](){}:=+-*\n
+//----------------------------------------------------------------------
+//Requirement 4(3): Special two character tokens:
+//----------------------------------------------------------------------
+<<>>::++--==+=-=*=/=

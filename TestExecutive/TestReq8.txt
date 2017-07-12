@@ -1,0 +1,20 @@
+/* Demonstrates Requirement 8 of Project1.
+   Special Case: Handling FOR Loop construct in C++    */
+//---------------------------------------------------------------------
+int main()
+{
+	//---------------------------------------------------------------------
+	//Special case for termination of token collection: for(;;) expression
+	//---------------------------------------------------------------------
+	for(int p=0; p<i; p++)
+	{
+		std::cout<<"\n This is FOR Loop";
+	}
+	//---------------------------------------------------------------------
+	//Special case for termination of token collection: c++11 style FOR
+	//---------------------------------------------------------------------
+	for(auto q: testlist)
+		std::cout<<"This is C++11 style FOR Loop";
+
+	return 0;
+}

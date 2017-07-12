@@ -1,0 +1,39 @@
+/* Demonstrates Requirement 7 of Project1. 
+   Each of the results for sub Requirements of Requirement 7 are displayed and 
+   corresponding description are provided in the comment above it.          */
+//---------------------------------------------------------------------
+//Requirement 7: Termination of token collection on extracting newline if "#" is first character of line
+//---------------------------------------------------------------------
+#include "header.h"
+#include <iostream>
+#include <string>
+#define PI 3.14
+
+//---------------------------------------------------------------------
+/*Requirement 7: Termination of token collection on the extraction of a single character token consisting
+ of ":" if immediately preceeded by one of the tokens: "public", "protected", or "private" */
+//---------------------------------------------------------------------
+class class_name{
+public:
+	void publicFunction();
+protected:
+	std::string protectedString;
+private:
+	bool privateTest;
+};
+
+int main()
+{
+	bool condition = true;
+	//--------------------------------------------------------------------------
+	//Requirement 7: Termination of token collection after extracting ; OR { OR }
+	//--------------------------------------------------------------------------
+	if(condition == true)
+		return true;
+	while(true)
+	{
+		std::cout<< "We are inside while loop";
+		break;
+	}
+	return 0;
+}
